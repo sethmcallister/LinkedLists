@@ -50,10 +50,10 @@ struct node *add(int val)
     current = ptr;
 }
 
-struct boolean contains(int val, struct node **prev)
+bool contains(int val, struct node **prev)
 {
     struct node *ptr = head;
-    struct *tmp = NULL;
+    struct *temp = NULL;
     bool found = false;
 
     while (ptr != NULL)
@@ -65,12 +65,12 @@ struct boolean contains(int val, struct node **prev)
         }
         else
         {
-            tmp = ptr;
+            temp = ptr;
             ptr = ptr->next;
         }
     }
 
-    return
+    return found;
 }
 
 int delete (int val)
